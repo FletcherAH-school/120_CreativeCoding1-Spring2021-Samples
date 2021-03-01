@@ -1,0 +1,15 @@
+div {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:darkorange;
+}
+
+.myClass{
+    font-size: 50px;
+    color:deeppink;
+    font-weight: bold;
+}
+
+body{
+    background-color: darkgray;
+    background-blend-mode:luminosity;
+}
