@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <title>contact us</title>
+    <head>
+        <meta keywords="idk">
+           
+    <style>body {
+    background-color: lightgray;
+    text-align: left;
+    }
+    
+  
+</style>
+<script>
+    function checkForm()
+    {
+        var end;
+        end = 0;
+
+        var name;
+        name = document.getElementById("txtName").value;
+        if (name == "") 
+        {
+            document.getElementById("txtName").style.backgroundColor = "red";
+            window.alert("Name required");
+        }
+
+        else{
+            document.getElementById("txtName").style.backgroundColor = "white"; 
+            end = end + 1;
+        }
+
+        var email;
+        email = document.getElementById("email").value;
+        if (email == "") 
+        {
+            document.getElementById("email").style.backgroundColor = "red";
+            window.alert("E-mail required");
+        }
+
+        else{
+            document.getElementById("email").style.backgroundColor = "white"; 
+            end = end + 1;
+        }
+
+        var tos;
+        tos = document.getElementById("yes").checked;
+        if (tos == "") 
+        {
+            window.alert("Must agree to terms of agreement to continue.");
+        }
+        else{
+        end = end + 1;
+        }
+        
+        if (end == 3)
+        {
+            window.alert("You did it");
+        }
+
+    } 
+</script>
+    </head> 
+    <body>
+     
+        <h1> <span class="myClass"> Contact us</span> </h1>
+        <h2><span style="font-family: 'Courier New', Courier, monospace; color:blueviolet"> Fletcher Henderson</span></h2>
+        <br />
+        <table>
+            
+        <tr>
+            <td>Name:</td> 
+            <td><input type="text" id="txtName"></td>
+        </tr>
+        <tr>
+
+            <td>Email:</td> 
+            <td><input type="text" id="email"></td>
+        </tr>
+        <tr>
+            <td><p>Do you</p></td>
+            <td><p>  accept <a href = "TOS.html">terms of agreement:</a></p></td>
+        </tr>
+        <tr>
+            <td><input type="radio" id= "yes" name="level" value="Yes" onClick="checkyes" /> Yes</td>
+            <br />
+            <td><input type="radio" id= "no" name="level" value="No" onClick="checkno" /> No</td>
+        </tr>
+        <tr>
+            <td colspan="2"><button id= "btnSubmit" onClick=checkForm();>Submit</button></td>
+        </tr>
+ 
+        </table>
+        <br />
+        
+        <a href="homepage.html">Homepage</a>
+        <br />
+        <a href="secondpage.html">Short story</a> 
+
+    </body>
+</html>
