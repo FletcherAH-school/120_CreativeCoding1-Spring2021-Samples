@@ -172,10 +172,10 @@ function structure(thickness) {
   fill(33, 33, 222);
   // top
   rect(0, 0, width, thickness);
-  // left
-  rect(0, 0, thickness, height);
   // bottom
   rect(0, height - thickness, width - 50, thickness);
+  // left
+  rect(0, 0, thickness, height);
   // right 
   rect(width - thickness, 0, thickness, height);
 }
